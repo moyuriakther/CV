@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: lightgray;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh
+}
+.container{
+    position: relative;
+    width: 100%;
+    min-height:1000px;
+    max-width: 1000px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0px 35px 55px rgba(0,0,0,0.1);
+}
+/* Left side style  */
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBox{
+    position: relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow: hidden;
+}
+.profileText .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: white;
+    font: size 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight:500px;
+    line-height: 1.4em;
+}
+.Info{
+    padding-top: 40px;
+}
+.infoTitle{
+    color: white;
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.Info ul{
+    position: relative;
+}
+.Info ul li{
+    font-size:14px;
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.Info ul li .icon{
+    display: inline-block;
+    width:30px;
+    font-size:18px;
+    color: lightseagreen
+}
+.Info ul li span{
+    color: white;
+    font-weight:300;
+}
+.Info.education li{
+    margin-bottom: 15px;
+}
+.Info.education h5{
+    color: lightseagreen;
+    font-weight: 500;
+}
+.Info.education h4:nth-child(2){
+    color: white;
+    font-weight: 500;
+}
+.Info.education h4{
+    color: white;
+    font-weight: 300;
+}
+.Info.language .percent, .info.about .percent{
+    position: relative;
+    width: 100%;
+    height:6px;
+    background: darkslategrey;
+    display:block;
+    margin-top: 5px;
+}
+.Info.language .percent div, .info.about .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: darkcyan;
+}
+/* Right side style */
+.container .right_side{
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0px;
+}
+.profile-title{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom:10px;
+}
+p{
+    color: gray;
+}
+.about ul li{
+    list-style: none;
+}
