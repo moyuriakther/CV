@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background: lightgray;
+    background: lightgreen;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -142,5 +142,8 @@ p{
     color: gray;
 }
 .about ul li{
+    list-style: none;
+}
+.interest ul li {
     list-style: none;
 }
